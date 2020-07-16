@@ -5,6 +5,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Form from "../../components/Form";
 import List from '../../components/List'
+
 import {
   headTextTitle,
   headTextTitleSec,
@@ -20,7 +21,9 @@ const goToTarget = (id) => {
 
 const Home = (props) => {
   return (
+   
     <div>
+      
       <Header onClickItem={goToTarget} />
       <div className="container w-100">
         <section id="home" className="d-flex col align-center p-2em head pv-90 pos-rel">
@@ -92,7 +95,9 @@ const Home = (props) => {
         </section>
       </div>
       <Footer />
+     
     </div>
+   
   );
 };
 

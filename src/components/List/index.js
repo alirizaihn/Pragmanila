@@ -17,7 +17,7 @@ function Index() {
     return (
         <div className=' guestbook-list'>
             {messages.map(mess => (
-                <ListItem message={mess.message} name={mess.name} date={mess.date}></ListItem>
+                <ListItem message={mess.message} name={mess.name} subject= {mess.subject} date={mess.date}></ListItem>
             ))}
         </div>
     )

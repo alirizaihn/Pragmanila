@@ -6,13 +6,16 @@ import * as serviceWorker from './serviceWorker';
 import {createStore} from 'redux';
 import allReducers from './Reducers'
 import{Provider} from 'react-redux';
+import { ToastProvider } from "react-toast-notifications";
 
 const store = createStore(allReducers)
 
 ReactDOM.render(
   <Provider store = {store}>
   <React.StrictMode>
+  <ToastProvider>
     <App />
+    </ToastProvider>
   </React.StrictMode></Provider>,
   document.getElementById('root')
 );
